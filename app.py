@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 df1 = pd.read_excel(
-    "Travel_in_Nagpur.xlsx"
+    "Travel_in_Nagpur_AI_ML_Dataset.xlsx"
 )
 
 df2 = pd.read_excel(
