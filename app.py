@@ -1,22 +1,15 @@
 
 import streamlit as st
-import pandas as pd
 
-df1 = pd.read_excel(
-    "Travel_in_Nagpur_AI_ML_Dataset.xlsx"
-)
+st.title("Testing")
 
-df2 = pd.read_excel(
-    "Travel_in_Nagpur_Version2_220_Places.xlsx"
-)
+try:
+    import openpyxl
+    st.success(f"openpyxl loaded: {openpyxl.__version__}")
+except Exception as e:
+    st.error(f"openpyxl error: {e}")
 
-df = pd.concat(
-    [df1, df2],
-    ignore_index=True
-)
-
-st.title("Hidden James Travel Guide")
-
+st.stop()
 category = st.selectbox(
     "Select Category",
     ["All"] +
