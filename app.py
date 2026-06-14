@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Load datasets
-df1 = pd.read_excel("Travel_in_Nagpur.xlsx")
+df1 = pd.read_excel("Travel_in_Nagpur_AI_ML_Dataset.xlsx")
 df2 = pd.read_excel("Travel_in_Nagpur_Version2_220_Places.xlsx")
 
 df = pd.concat([df1, df2], ignore_index=True)
